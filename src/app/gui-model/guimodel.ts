@@ -174,6 +174,13 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
+                            "name": "Activities",
+                            "icon": "fa-cubes",
+                            "color": "green",
+                            "page": "activitiespage",
+                        },
+                        {
+                            "type": "button",
                             "name": "Location",
                             "icon": "fa-cubes",
                             "color": "yellow",
@@ -211,6 +218,34 @@ export class GuiModel {
                             "url": "/friend",
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "activitiespage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-cubes",
+                            "color": "green",
+                            "width": 2,
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-cubes",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/Activity",
+                            "form": {
+                                "form": "LocationForm"
                             }
                         },
                     ]
