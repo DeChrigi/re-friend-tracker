@@ -273,7 +273,7 @@ export class GuiModel {
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
-                            "url": "/friend",
+                            "url": "/friend/:friendKey",
                             "form": {
                                 "form": "FriendForm"
                             }
