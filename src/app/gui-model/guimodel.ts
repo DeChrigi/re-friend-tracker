@@ -356,7 +356,7 @@ export class GuiModel {
                             "color": "green",
                             "form": {
                                 "form": "FriendForm"
-                            }
+                            } 
                         },
                         {
                             "type": "list",
