@@ -159,6 +159,13 @@ export class GuiModel {
                     "required": true
                     },
                     {
+                    "id": "creationdate",
+                    "type": "date",
+                    "name": "CreationDate",
+                    "width": 2,
+                    "required": true
+                    },
+                    {
                     "type": "deleteButton",
                     "name": "Delete"
                     },
