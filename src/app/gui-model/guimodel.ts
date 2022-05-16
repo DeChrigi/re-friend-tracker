@@ -117,6 +117,14 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "url": "/location",
+                            "form": "LocationForm",
+                            "width": 2
+                        },
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
@@ -259,7 +267,7 @@ export class GuiModel {
                             "name": "NewActivity",
                             "icon": "fa-cubes",
                             "color": "green",
-                            "width": 2,
+                            "width": 1,
                             "form": {
                                 "form": "ActivityForm"
                             }
@@ -318,6 +326,16 @@ export class GuiModel {
                     "form": {
                     "form": "GroupForm"
                     }
+                    },
+                    {
+                        "type": "list",
+                        "icon": "fa-weixin",
+                        "color": "wisteria",
+                        "search": true,
+                        "url": "/group",
+                        "form": {
+                        "form": "GroupForm"
+                        }
                     }
                     ]
                 }
