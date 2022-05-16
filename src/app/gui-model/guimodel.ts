@@ -51,6 +51,14 @@ export class GuiModel {
                             "width": 2
                         },
                         {
+                            "id":   "activity",
+                            "type": "autocomplete",
+                            "name": "Activity",
+                            "url": "/friend/:friendKey/activity",
+                            "form": "AddActivityForm",
+                            "width": 2
+                        },
+                        {
                             "id": "birthdate",
                             "type": "date",
                             "name": "Birthday",
@@ -122,14 +130,6 @@ export class GuiModel {
                             "name": "Location",
                             "url": "/location",
                             "form": "LocationForm",
-                            "width": 2
-                        },
-                        {
-                            "id": "friend",
-                            "type": "autocomplete",
-                            "name": "Friend",
-                            "url": "/friend",
-                            "form": "FriendForm",
                             "width": 2
                         },
                         {
@@ -246,6 +246,31 @@ export class GuiModel {
                         {
                             "type": "newButton",
                             "name": "NewFriend",
+                            "icon": "fa-user",
+                            "color": "green",
+                            "form": {
+                                "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-user",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/friend",
+                            "page": "friendspage"
+                        },
+                    ]
+                },
+                {
+                    "id": "editfriendspage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
                             "form": {
