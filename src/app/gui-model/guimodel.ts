@@ -87,6 +87,84 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "EditFriendForm",
+                    "title": "Friend",
+                    "url": "/friend/:friendKey",
+                    "formFieldList": [
+                        {
+                            "id": "familyName",
+                            "type": "text",
+                            "name": "FamilyName",
+                            "width": 1,
+                            "required": true
+                        },
+                        {
+                            "id": "firstName",
+                            "type": "text",
+                            "name": "FirstName",
+                            "width": 1,
+                            "required": true
+                        },
+                        {
+                            "id": "nickname",
+                            "type": "text",
+                            "name": "Nickname",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id": "group",
+                            "type": "autocomplete",
+                            "name": "Group",
+                            "url": "/group",
+                            "form": "GroupForm",
+                            "width": 2
+                        },
+                        {
+                            "id":   "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "url": "/location",
+                            "form": "LocationForm",
+                            "width": 2
+                        },
+                        {
+                            "id":   "activity",
+                            "type": "autocomplete",
+                            "name": "Activity",
+                            "url": "/friend/:friendKey/activity",
+                            "form": "AddActivityForm",
+                            "width": 2
+                        },
+                        {
+                            "id": "birthdate",
+                            "type": "date",
+                            "name": "Birthday",
+                            "width": 2
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "LocationForm",
                     "title": "Location",
                     "url": "/location",
@@ -97,6 +175,13 @@ export class GuiModel {
                             "name": "LocationName",
                             "width": 2,
                             "required": true
+                        },
+                        {
+                            "id": "comments",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "required": false
                         },
                         {
                             "type": "deleteButton",
@@ -120,7 +205,7 @@ export class GuiModel {
                         {
                             "id": "name",
                             "type": "text",
-                            "name": "ActivityName",
+                            "name": "Activity",
                             "width": 2,
                             "required": true
                         },
@@ -131,6 +216,13 @@ export class GuiModel {
                             "url": "/location",
                             "form": "LocationForm",
                             "width": 2
+                        },
+                        {
+                            "id": "comments",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "required": false
                         },
                         {
                             "type": "deleteButton",
@@ -164,6 +256,13 @@ export class GuiModel {
                     "name": "CreationDate",
                     "width": 2,
                     "required": true
+                    },
+                    {
+                        "id": "comment",
+                        "type": "text",
+                        "name": "Comments",
+                        "width": 2,
+                        "required": false
                     },
                     {
                     "type": "deleteButton",
@@ -282,7 +381,7 @@ export class GuiModel {
                             "color": "green",
                             "url": "/friend/:friendKey",
                             "form": {
-                                "form": "FriendForm"
+                                "form": "EditFriendForm"
                             }
                         },
                         {
@@ -297,7 +396,7 @@ export class GuiModel {
                         {
                             "type": "list",
                             "icon": "fa-cubes",
-                            "color": "brown",
+                            "color": "yellow",
                             "search": true,
                             "url": "/friend/:friendKey/activity",
                             "form": {
