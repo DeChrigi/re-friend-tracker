@@ -257,7 +257,7 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend",
+                            
                             "page": "friendspage"
                         },
                     ]
@@ -279,7 +279,7 @@ export class GuiModel {
                         },
                         {
                             "type": "list",
-                            "icon": "fa-user",
+                            "icon": "fa-cube",
                             "color": "blue",
                             "search": true,
                             "url": "/friend",
