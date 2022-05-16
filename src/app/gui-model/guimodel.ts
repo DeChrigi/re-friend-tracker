@@ -257,8 +257,8 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
-                            
-                            "page": "friendspage"
+                            "url": "/friend",
+                            "page": "editfriendspage"
                         },
                     ]
                 },
@@ -273,6 +273,7 @@ export class GuiModel {
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
+                            "url" : "/friend",
                             "form": {
                                 "form": "FriendForm"
                             }
@@ -282,9 +283,9 @@ export class GuiModel {
                             "icon": "fa-cube",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend",
+                            "url": "/activities",
                             "form": {
-                                "form": "FriendForm"
+                                "form": "ActivityForm"
                             }
                         },
                     ]
