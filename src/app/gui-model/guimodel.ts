@@ -340,7 +340,7 @@ export class GuiModel {
                             "icon": "fa-weixin",
                             "color": "wisteria",
                             "page": "groupspage",
-                        },
+                        }, 
                     ]
                 },
                 {
