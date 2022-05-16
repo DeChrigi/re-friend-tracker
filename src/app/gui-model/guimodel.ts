@@ -273,9 +273,18 @@ export class GuiModel {
                             "name": "EditFriend",
                             "icon": "fa-user",
                             "color": "green",
-                            "url": "/friend/:friendKey",
+                            "url": "/friend",
                             "form": {
                                 "form": "FriendForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "AddActivity",
+                            "icon": "fa-cube",
+                            "color": "green",
+                            "form": {
+                                "form": "AddActivityForm"
                             }
                         },
                         {
