@@ -105,6 +105,32 @@ export class GuiModel {
                     ]
                 },
                 {
+                    "id": "ActivityForm",
+                    "title": "Activity",
+                    "url": "/activity",
+                    "formFieldList": [
+                        {
+                            "id": "name",
+                            "type": "text",
+                            "name": "ActivityName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "type": "deleteButton",
+                            "name": "Delete"
+                        },
+                        {
+                            "type": "cancelButton",
+                            "name": "Cancel"
+                        },
+                        {
+                            "type": "okButton",
+                            "name": "Ok"
+                        }
+                    ]
+                },
+                {
                     "id": "GroupForm",
                     "title": "Group",
                     "url": "/group",
@@ -235,7 +261,7 @@ export class GuiModel {
                             "color": "green",
                             "width": 2,
                             "form": {
-                                "form": "AddActivityForm"
+                                "form": "ActivityForm"
                             }
                         },
                         {
@@ -245,7 +271,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/Activity",
                             "form": {
-                                "form": "LocationForm"
+                                "form": "ActivityForm"
                             }
                         },
                     ]
